@@ -1,0 +1,24 @@
+[
+	{
+		"pergunta": "Alguém saiu e deixou a torneira aberta.",
+		"alternativas": [
+			"Deixar aberta",
+			"Bricar com a água",
+			"Fechar a torneira"
+		],
+		"resposta": 2,
+		"imagemPadrao": "images/1.jpg",
+		"imagemCerta": "images/1c.jpg"
+	},	
+	{
+		"pergunta": "pergunta 2?",
+		"alternativas": [
+			"a",
+			"b",
+			"c"
+		],
+		"resposta": 0,
+		"imagemPadrao": "images/2.jpg",
+		"imagemCerta": "images/2c.jpg"
+	}
+]
