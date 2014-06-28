@@ -11,7 +11,7 @@ With the Coisa Certa! all people can learn and test their knowledge on good beha
 
 ### DEMO
 
-http://diegobonfim.com/app/coisa_certa
+http://diegobonfim.com/app/coisa-certa
 
 ### Powered by
 + [Firefox OS](http://mozilla.org/pt-BR/firefox/os/)
