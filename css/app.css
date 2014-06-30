@@ -33,11 +33,23 @@
 }
 
 #txHome {
+	z-index: 1000; 
+	position: relative; 
 	text-align:center;
 	margin-top:-0.5%;
 	text-shadow: 0 0 20px #fff, 0 -10px 20px #fff, 
 	0 10px 20px #fff, -20px 0 40px #fff, 
 	20px 0 40px #fff;	
+}
+
+#video {
+	position: absolute; 
+	width: 100%;
+	max-height:95%;
+	z-index: 0; 
+	overflow: hidden;
+	margin-top: -16px;
+	margin-left: -16px;
 }
 	
 .ui-bar.ui-bar-a {
@@ -72,6 +84,10 @@
 	background-position: center center;
 	background-size: auto 100%;
 	background-repeat:no-repeat;
+	background-color:white;
+}
+
+.paginaH{
 	background-color:white;
 }
 

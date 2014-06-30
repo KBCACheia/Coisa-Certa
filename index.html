@@ -14,7 +14,7 @@
 	</head>
 	
 	<body>
-		<div data-role="page" class="pagina" ID="inicio">
+		<div data-role="page" class="paginaH" ID="inicio">
 			<!--Cabeçalho página inicial -->
 			<div data-role="header">
 				<a href="#dlgSobre" data-role="button" data-rel="dialog" data-transition="flip" data-icon="info" data-iconpos="notext">Sobre</a>
@@ -23,6 +23,10 @@
 
 			<!--Corpo página inicial -->
 			<div role="main" class="ui-content" ID="home">
+				<!--plano de fundo-->
+				<video ID="video" autoplay loop> 
+					<source src="images/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				</video>
 				<h2 ID="txHome">Você sabe a <br><em style="text-shadow: blue 0.0em 0.0em 0.5em;">Coisa Certa</em> a fazer?</h2>
 				<a href="#perguntas" ID="btComecar" class="ui-btn ui-corner-all">Começar</a>
 			</div>				
