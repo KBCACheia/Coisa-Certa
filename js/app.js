@@ -106,9 +106,9 @@ $(function(){
 			$( "#popupQuestao" ).popup( "open" );
 		} else {
 			if ($("input[name='radio-choice-v-2']:checked").val()!= dbPerguntas[ponteiro].resposta){ /*verificar a marcada para exibir msg ao usuário*/
-				$('#txPopup').html("<img src='css/images/troll.png'/>Ops, você errou!");
+				$('#txPopup').html("<img src='css/images/okay.png'/>Ops, é melhor tentar outra!");
 				$( "#popupQuestao" ).popup( "open" );
-				$('#alternativa-'+ $("input[name='radio-choice-v-2']:checked").val()).append("<img src='css/images/troll.png' style='float:right; height:30px; margin:-8px;'/>");/*marca a errada*/
+				$('#alternativa-'+ $("input[name='radio-choice-v-2']:checked").val()).append("<img src='css/images/okay.png' style='float:right; height:30px; margin:-8px;'/>");/*marca a errada*/
 				erradas++;
 				
 			} else {
