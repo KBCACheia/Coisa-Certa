@@ -99,6 +99,7 @@ $(function(){
 		numeroPerguntas = 2;
 		ponteiro = 0;		
 		carregarPergunta();
+		$("#btProxima").html('Próxima');
 		$("input[name='radio-choice-v-2']").attr("checked", false);
 		$('#formulario').each (function(){ /*apaga a marcação do radio buttom*/
 			this.reset();
