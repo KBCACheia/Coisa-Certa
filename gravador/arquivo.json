@@ -1,0 +1,63 @@
+{
+"pergunta": "A luz está acesa ?",
+"alternativas": ["Desligar",
+"Deixar acesa",
+"Chamar alguém para desligar"],
+"resposta": 0,
+"imagemPadrao": "images/2.jpg",
+"imagemCerta": "images/2c.jpg"
+},
+{
+"pergunta": "Alguém caiu na rua?",
+"alternativas": ["Deixa-lo caído ",
+"Ajudar a levantar",
+"Rir da queda "],
+"resposta": 1,
+"imagemPadrao": "images/3.jpg",
+"imagemCerta": "images/3c.jpg"
+},
+{
+"pergunta": "Alguém deixou o dinheiro cair?",
+"alternativas": ["Ficar com o dinheiro",
+"Deixar no chão ",
+"Entregar ao dono"],
+"resposta": 2,
+"imagemPadrao": "images/4.jpg",
+"imagemCerta": "images/4c.jpg"
+},
+{
+"pergunta": "Tem um idoso querendo atravessar a rua?",
+"alternativas": ["Ajuda-lo atravessar",
+"Deixar atravessar sozinho",
+"Não fazer nada "],
+"resposta": 0,
+"imagemPadrao": "images/5.jpg",
+"imagemCerta": "images/5c.jpg"
+},
+{
+"pergunta": "Sair e o cachorro fez cocô na rua?",
+"alternativas": ["Deixar o cocô na rua",
+"Não fazer nada",
+"Pegar o cocô"],
+"resposta": 2,
+"imagemPadrao": "images/6.jpg",
+"imagemCerta": "images/6c.jpg"
+},
+{
+"pergunta": "O sinal de pedestre está vermelho?",
+"alternativas": ["Passar correndo",
+"Esperar o sinal abrir",
+"Se não vier carro pode  atravessar"],
+"resposta": 1,
+"imagemPadrao": "images/7.jpg",
+"imagemCerta": "images/7c.jpg"
+},
+{
+"pergunta": "Encontramos nossa mãe na hora de acordar?",
+"alternativas": ["Pedir o café",
+"Não falar com ela",
+"Da bom dia"],
+"resposta": 2,
+"imagemPadrao": "images/8.jpg",
+"imagemCerta": "images/8c.jpg"
+},

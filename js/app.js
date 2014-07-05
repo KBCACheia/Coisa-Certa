@@ -10,6 +10,7 @@ $(function(){
 	var perguntasSorteadas = [];
 	var erradas = 0;
 	var ponteiro = 0; /*Receberá o index aleátório pra usar na resposta*/
+	var vezes=0; /*numero de vezes jogada sem parar*/
 	
 	/* colocando json em variavel*/
 	$.getJSON("js/perguntas.json", function(json){
@@ -34,18 +35,22 @@ $(function(){
 	
 	function randomInt(min, max){ /*gera o index randomico e confere se já foi usado*/
 			var index = -1;
+			var saiu = 0;
 			do {
-				index = Math.floor(Math.random()*(max-min+1)+min);
-				for(i = 0; i < perguntasRepetidas.length; i++){
+				index = Math.floor(Math.random()*(max-min+1))+min;
+				console.log(index);
+				for (i=0; i < perguntasRepetidas.length; i++) {
 					if(perguntasRepetidas[i] == index){
-						index = -1;
-					}
-					else {
-						perguntasRepetidas[i] = index;
-						break;
+						saiu++;
 					}
 				}
+				if (saiu>0){
+					index=-1;
+				}
+				saiu=0;
 			}while(index < 0)
+			perguntasRepetidas.push(index);
+			console.log(index);
 			return index;
 	}
 		
@@ -84,6 +89,7 @@ $(function(){
 	
 	$("#btComecar").click(function(){ /* botão Começar chama o metodo para carregar a pergunta e zera todos os vetores*/
 		erradas=0;
+		vezes=0;
 		respostas = [];
 		indexPergunta = 0;
 		perguntasRepetidas = [];
@@ -147,11 +153,15 @@ $(function(){
 	});
 	
 	$("#btContinua").click(function(){ /*inicia o processo de geração de perguntas*/
+		vezes++;
 		indexPergunta = 0;
 		ponteiro=0;
 		respostas = [];
 		respostasPerguntas = [];
-		perguntasSorteadas = [];		
+		perguntasSorteadas = [];
+		if (vezes==3){
+			perguntasRepetidas = [];
+		}
 		carregarPergunta();
 		$("#btProxima").html('Próxima');
 		$('#formulario').each (function(){ /*apaga a marcação do radio buttom*/
