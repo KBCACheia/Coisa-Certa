@@ -14,7 +14,7 @@
 	</head>
 	
 	<body>
-		<div data-role="page" class="paginaH" ID="inicio">
+		<div data-role="page" class="pagina" ID="inicio">
 			<!--Cabeçalho página inicial -->
 			<div data-role="header">
 				<a href="#dlgSobre" data-role="button" data-rel="dialog" data-transition="flip" data-icon="info" data-iconpos="notext">Sobre</a>
@@ -24,9 +24,9 @@
 			<!--Corpo página inicial -->
 			<div role="main" class="ui-content" ID="home">
 				<!--plano de fundo-->
-				<video ID="video" autoplay loop> 
+				<!--<video ID="video" autoplay loop> 
 					<source src="images/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-				</video>
+				</video>-->
 				<h2 ID="txHome">Você sabe a <br><em style="text-shadow: blue 0.0em 0.0em 0.5em;">Coisa Certa</em> a fazer?</h2>
 				<a href="#perguntas" ID="btComecar" class="ui-btn ui-corner-all">Começar</a>
 			</div>				
@@ -46,11 +46,11 @@
 					<div class="alternativas">
 						<fieldset data-role="controlgroup" ID="rdButtom" data-mini="true">
 							<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="0" autocomplete="off">
-							<label for="radio-choice-v-2a"><span ID="alternativa-0"></span></label>
+							<label for="radio-choice-v-2a"><span class="radio" ID="alternativa-0"></span></label>
 							<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="1" autocomplete="off">
-							<label for="radio-choice-v-2b"><span ID="alternativa-1"></span></label>
+							<label for="radio-choice-v-2b"><span class="radio" ID="alternativa-1"></span></label>
 							<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2c" value="2" autocomplete="off">
-							<label for="radio-choice-v-2c"><span ID="alternativa-2"></span></label>
+							<label for="radio-choice-v-2c"><span class="radio" ID="alternativa-2"></span></label>
 						</fieldset>
 					</div>
 				</form>
